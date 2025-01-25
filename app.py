@@ -29,7 +29,7 @@ CONSTANT_STYLE = """
         color: var(--primary-text);
         font-family: 'Arial', sans-serif;
     }
-    .dark-mode .stApp {
+    body[data-theme="dark"] .stApp {
         background-color: var(--secondary-bg);
         color: var(--secondary-text);
     }
