@@ -45,6 +45,10 @@ CONSTANT_STYLE = """
         padding: 5px;
         font-size: 14px;
     }
+    .st-emotion-cache-b0y9n5{
+    background-color: #8fce00
+    
+    }
     </style>
 """
 
