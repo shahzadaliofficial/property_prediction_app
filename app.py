@@ -18,7 +18,7 @@ CONSTANT_STYLE = """
    
 
     .stApp {
-        background-color: white;
+        background-color: 	#ecf0f1;
         color: red;
         font-family: 'Arial', sans-serif;
     }
@@ -31,7 +31,7 @@ CONSTANT_STYLE = """
     }
     .stButton>button {
         background-color: white;
-        color: blue;
+        color: red;
         font-size: 16px;
         border-radius: 5px;
         padding: 10px 20px;
