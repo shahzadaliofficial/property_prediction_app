@@ -17,7 +17,7 @@ CONSTANT_STYLE = """
     <style>
     
     .stApp {
-        background-color: white;
+        background-color: #ffdcb5;
         color: Black;
         font-family: 'Arial', sans-serif;
     }
