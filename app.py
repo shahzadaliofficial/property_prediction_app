@@ -12,30 +12,42 @@ def predict(input_data):
 # Streamlit app configuration
 st.set_page_config(page_title="SVM Prediction App", layout="centered", page_icon="🤖")
 
-# Common CSS styles
-COMMON_STYLE = """
+# Common CSS styles with a constant color scheme
+CONSTANT_STYLE = """
     <style>
+    :root {
+        --primary-bg: #e8e8e8; /* Neutral light */
+        --secondary-bg: #2d2f33; /* Neutral dark */
+        --primary-text: #212121; /* Dark text */
+        --secondary-text: #f1f1f1; /* Light text */
+        --accent-color: #4CAF50; /* Green accent */
+        --button-hover: #45a049; /* Darker green for hover */
+    }
+
     .stApp {
-        background-color: #2d2f33; /* Neutral background */
-        color: #ffffff; /* Light text for readability */
+        background-color: var(--primary-bg);
+        color: var(--primary-text);
         font-family: 'Arial', sans-serif;
+    }
+    .dark-mode .stApp {
+        background-color: var(--secondary-bg);
+        color: var(--secondary-text);
     }
     .title {
         font-size: 36px;
-        color: #f1f1f1;
-        font-family: 'Arial', sans-serif;
+        color: var(--accent-color);
         text-align: center;
         margin-bottom: 20px;
     }
     .stButton>button {
-        background-color: #4CAF50;
+        background-color: var(--accent-color);
         color: white;
         font-size: 16px;
         border-radius: 5px;
         padding: 10px 20px;
     }
     .stButton>button:hover {
-        background-color: #45a049;
+        background-color: var(--button-hover);
     }
     .stNumberInput input, .stSelectbox select {
         border-radius: 5px;
@@ -46,11 +58,11 @@ COMMON_STYLE = """
     </style>
 """
 
-# Apply the common style
-st.markdown(COMMON_STYLE, unsafe_allow_html=True)
+# Apply the constant style
+st.markdown(CONSTANT_STYLE, unsafe_allow_html=True)
 
 # App title
-st.markdown("<div class='title'>SVM Purchace Likelihood Prediction App </div>", unsafe_allow_html=True)
+st.markdown("<div class='title'>SVM Prediction App 🤖</div>", unsafe_allow_html=True)
 
 # Input form
 with st.form("prediction_form"):
