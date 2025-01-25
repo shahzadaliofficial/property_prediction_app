@@ -15,40 +15,28 @@ st.set_page_config(page_title="SVM Prediction App", layout="centered", page_icon
 # Common CSS styles with a constant color scheme
 CONSTANT_STYLE = """
       <style>
-    :root {
-        --primary-bg: #ffffff; /* Light background */
-        --secondary-bg: #0d1117; /* Dark background */
-        --primary-text: #24292e; /* Light text */
-        --secondary-text: #c9d1d9; /* Dark text */
-        --accent-color: #4CAF50; /* Green accent */
-        --button-hover: #45a049; /* Darker green for hover */
-    }
+   
 
     .stApp {
-        background-color: var(--primary-bg);
-        color: var(--primary-text);
+        background-color: white;
+        color: red;
         font-family: 'Arial', sans-serif;
     }
-    body[data-color-mode="dark"] .stApp {
-        background-color: var(--secondary-bg);
-        color: var(--secondary-text);
-    }
+   
     .title {
         font-size: 36px;
-        color: var(--accent-color);
+        color: red;
         text-align: center;
         margin-bottom: 20px;
     }
     .stButton>button {
-        background-color: var(--accent-color);
-        color: white;
+        background-color: white;
+        color: blue;
         font-size: 16px;
         border-radius: 5px;
         padding: 10px 20px;
     }
-    .stButton>button:hover {
-        background-color: var(--button-hover);
-    }
+    
     .stNumberInput input, .stSelectbox select {
         border-radius: 5px;
         border: 1px solid #cccccc;
