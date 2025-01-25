@@ -14,29 +14,29 @@ st.set_page_config(page_title="SVM Prediction App", layout="centered", page_icon
 
 # Common CSS styles with a constant color scheme
 CONSTANT_STYLE = """
-      <style>
-   
-
+    <style>
     .stApp {
-        background-color: 	#ecf0f1;
-        color: red;
+        background-color: #2d2f33; /* Neutral background */
+        color: #ffffff; /* Light text for readability */
         font-family: 'Arial', sans-serif;
     }
-   
     .title {
         font-size: 36px;
-        color: red;
+        color: #f1f1f1;
+        font-family: 'Arial', sans-serif;
         text-align: center;
         margin-bottom: 20px;
     }
     .stButton>button {
-        background-color: white;
-        color: red;
+        background-color: #4CAF50;
+        color: white;
         font-size: 16px;
         border-radius: 5px;
         padding: 10px 20px;
     }
-    
+    .stButton>button:hover {
+        background-color: #45a049;
+    }
     .stNumberInput input, .stSelectbox select {
         border-radius: 5px;
         border: 1px solid #cccccc;
