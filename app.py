@@ -16,7 +16,7 @@ st.set_page_config(page_title="SVM Prediction App", layout="centered", page_icon
 CONSTANT_STYLE = """
     <style>
     .stApp {
-        background-color: #2d2f33; /* Neutral background */
+        background-color: #808080; /* Neutral background */
         color: #ffffff; /* Light text for readability */
         font-family: 'Arial', sans-serif;
     }
@@ -28,15 +28,13 @@ CONSTANT_STYLE = """
         margin-bottom: 20px;
     }
     .stButton>button {
-        background-color: #4CAF50;
+        background-color: #c6e2b5;
         color: white;
         font-size: 16px;
         border-radius: 5px;
         padding: 10px 20px;
     }
-    .stButton>button:hover {
-        background-color: #45a049;
-    }
+   
     .stNumberInput input, .stSelectbox select {
         border-radius: 5px;
         border: 1px solid #cccccc;
