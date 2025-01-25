@@ -49,6 +49,9 @@ CONSTANT_STYLE = """
     background-color: #8fce00
     
     }
+    .st-g1{
+    background-color:#ffdcb5;
+    }
     </style>
 """
 
