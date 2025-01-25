@@ -16,9 +16,13 @@ st.set_page_config(page_title="SVM Prediction App", layout="centered", page_icon
 CONSTANT_STYLE = """
     <style>
     .stApp {
-        background-color: #808080; /* Neutral background */
+        background-color: #674ea7; /* Neutral background */
         color: #ffffff; /* Light text for readability */
         font-family: 'Arial', sans-serif;
+    }
+    label{
+    color: red,
+   
     }
     .title {
         font-size: 36px;
@@ -28,7 +32,7 @@ CONSTANT_STYLE = """
         margin-bottom: 20px;
     }
     .stButton>button {
-        background-color: #c6e2b5;
+        background-color: #674ea7;
         color: white;
         font-size: 16px;
         border-radius: 5px;
