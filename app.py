@@ -50,7 +50,7 @@ CONSTANT_STYLE = """
     
     }
     .st-g1{
-    background-color:#ffdcb5;
+    background-color:#2c3e50;
     }
     </style>
 """
