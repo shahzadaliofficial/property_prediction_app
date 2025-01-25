@@ -23,7 +23,7 @@ CONSTANT_STYLE = """
     }
     .title {
         font-size: 36px;
-        color: white;
+        color: black;
         text-align: center;
         margin-bottom: 20px;
     }
