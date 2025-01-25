@@ -12,32 +12,52 @@ def predict(input_data):
 # Streamlit app configuration
 st.set_page_config(page_title="SVM Prediction App", layout="centered", page_icon="🤖")
 
-# App title
-st.title("SVM Prediction App 🤖")
-st.markdown(
-    """
+# Common CSS styles
+COMMON_STYLE = """
     <style>
     .stApp {
-        background-color: #f8f9fa;
+        background-color: #2d2f33; /* Neutral background */
+        color: #ffffff; /* Light text for readability */
+        font-family: 'Arial', sans-serif;
     }
     .title {
         font-size: 36px;
-        color: #333333;
+        color: #f1f1f1;
         font-family: 'Arial', sans-serif;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .stButton>button {
+        background-color: #4CAF50;
+        color: white;
+        font-size: 16px;
+        border-radius: 5px;
+        padding: 10px 20px;
+    }
+    .stButton>button:hover {
+        background-color: #45a049;
+    }
+    .stNumberInput input, .stSelectbox select {
+        border-radius: 5px;
+        border: 1px solid #cccccc;
+        padding: 5px;
+        font-size: 14px;
     }
     </style>
-    """,
-    unsafe_allow_html=True,
-)
+"""
 
-st.markdown("<div class='title'>Predict Purchase Likelihood</div>", unsafe_allow_html=True)
+# Apply the common style
+st.markdown(COMMON_STYLE, unsafe_allow_html=True)
+
+# App title
+st.markdown("<div class='title'>SVM Purchace Likelihood Prediction App </div>", unsafe_allow_html=True)
 
 # Input form
 with st.form("prediction_form"):
     st.subheader("Input User Data")
-    gender = st.selectbox("Gender", ["Male", "Female"], index=0)
-    age = st.number_input("Age", min_value=0, max_value=100, step=1, value=25)
-    salary = st.number_input("Estimated Salary", min_value=0, step=1000, value=20000)
+    gender = st.selectbox("Gender", ["Male", "Female"], index=0, help="Select the gender.")
+    age = st.number_input("Age", min_value=0, max_value=100, step=1, placeholder="Enter age")
+    salary = st.number_input("Estimated Salary", min_value=0, step=1000, placeholder="Enter estimated salary")
 
     # Submit button
     submitted = st.form_submit_button("Predict")
