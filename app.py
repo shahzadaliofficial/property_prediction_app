@@ -100,7 +100,6 @@ if model is not None:
         gender = st.radio("Gender", ["Male", "Female"], index=0, help="Select the gender.")
         age = st.number_input("Age", min_value=0, max_value=100, step=None, placeholder="Enter age")
         salary = st.number_input("Estimated Salary", min_value=0, step=None, placeholder="Enter estimated salary")
-
         # Submit button
         submitted = st.form_submit_button("Predict")
 
