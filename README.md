@@ -1,5 +1,5 @@
 # Streamlit SVM Property Prediction App
-
+Visit on [https://property-prediction.streamlit.app/](https://property-prediction.streamlit.app/).
 This is a Streamlit-based web application that uses a pre-trained SVM model to predict if a user will purchase a product based on their demographic data.
 
 ## Features
